@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D920EDBA-CFE2-4982-93DD-230ECB6EB43E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>仓库管理系统</RootNamespace>
+    <AssemblyName>仓库管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Attributes">
+      <HintPath>C:\Users\haha\Desktop\高新区报告\Entity\bin\Debug\Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2014.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2014.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2014.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillFind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillFind.Designer.cs">
+      <DependentUpon>BillFind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientInfo.Designer.cs">
+      <DependentUpon>ClientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteNode.Designer.cs">
+      <DependentUpon>DeleteNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteWarehouse.Designer.cs">
+      <DependentUpon>DeleteWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsDevolve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsDevolve.Designer.cs">
+      <DependentUpon>GoodsDevolve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodsType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsType.Designer.cs">
+      <DependentUpon>GoodsType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInfo.cs" />
+    <Compile Include="ManagerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerInfo.Designer.cs">
+      <DependentUpon>ManagerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewManager.Designer.cs">
+      <DependentUpon>NewManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewOutInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOutInventory.Designer.cs">
+      <DependentUpon>NewOutInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPutInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPutInventory.Designer.cs">
+      <DependentUpon>NewPutInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutInventory.Designer.cs">
+      <DependentUpon>OutInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PutInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutInventory.Designer.cs">
+      <DependentUpon>PutInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PutInventoryprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PutInventoryprint.Designer.cs">
+      <DependentUpon>PutInventoryprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report1.cs" />
+    <Compile Include="ReportPutInventory.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SetTree.cs" />
+    <Compile Include="Warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse.Designer.cs">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BillFind.resx">
+      <DependentUpon>BillFind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientInfo.resx">
+      <DependentUpon>ClientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteNode.resx">
+      <DependentUpon>DeleteNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteWarehouse.resx">
+      <DependentUpon>DeleteWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsDevolve.resx">
+      <DependentUpon>GoodsDevolve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsType.resx">
+      <DependentUpon>GoodsType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerInfo.resx">
+      <DependentUpon>ManagerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewManager.resx">
+      <DependentUpon>NewManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewOutInventory.resx">
+      <DependentUpon>NewOutInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPutInventory.resx">
+      <DependentUpon>NewPutInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutInventory.resx">
+      <DependentUpon>OutInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PutInventory.resx">
+      <DependentUpon>PutInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PutInventoryprint.resx">
+      <DependentUpon>PutInventoryprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse.resx">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\1.frd" />
+    <None Include="bin\Debug\1.frx" />
+    <None Include="bin\Debug\2.frx" />
+    <None Include="bin\Debug\仓库管理系统.exe.config" />
+    <None Include="bin\Debug\仓库管理系统.vshost.exe.config" />
+    <None Include="bin\Debug\仓库管理系统.vshost.exe.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WarehouseBLL\WarehouseBLL.csproj">
+      <Project>{67afa584-0a82-4ea5-8e30-358e8e5db759}</Project>
+      <Name>WarehouseBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WarehouseMOD\WarehouseMOD.csproj">
+      <Project>{ab835145-c0ae-4869-8c60-63d7cfc8ef27}</Project>
+      <Name>WarehouseMOD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Attributes.dll" />
+    <None Include="bin\Debug\Attributes.pdb" />
+    <None Include="bin\Debug\FastReport.Bars.dll" />
+    <None Include="bin\Debug\FastReport.dll" />
+    <None Include="bin\Debug\FastReport.Editor.dll" />
+    <None Include="bin\Debug\WarehouseBLL.dll" />
+    <None Include="bin\Debug\WarehouseBLL.pdb" />
+    <None Include="bin\Debug\WarehouseDAL.dll" />
+    <None Include="bin\Debug\WarehouseDAL.pdb" />
+    <None Include="bin\Debug\WarehouseMOD.dll" />
+    <None Include="bin\Debug\WarehouseMOD.pdb" />
+    <None Include="bin\Debug\仓库管理系统.pdb" />
+    <Content Include="Img\Log.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

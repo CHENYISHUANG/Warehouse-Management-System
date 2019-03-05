@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/22/2017 11:17:20" ReportInfo.Modified="08/22/2017 12:07:57" ReportInfo.CreatorVersion="2014.1.3.0">
+  <Dictionary>
+    <TableDataSource Name="putreport" ReferenceName="Data.putreport" DataType="System.Int32" Enabled="true">
+      <Column Name="物品名" DataType="System.String"/>
+      <Column Name="物品类型" DataType="System.String"/>
+      <Column Name="物品代码" DataType="System.String"/>
+      <Column Name="物品规格" DataType="System.String"/>
+      <Column Name="物品体积" DataType="System.String"/>
+      <Column Name="物品重量" DataType="System.String"/>
+      <Column Name="物品数量" DataType="System.String"/>
+      <Column Name="生产日期" DataType="System.String"/>
+      <Column Name="到期日期" DataType="System.String"/>
+      <Column Name="物品备注" DataType="System.String"/>
+      <Column Name="客户名称" DataType="System.String"/>
+      <Column Name="入库方式" DataType="System.String"/>
+      <Column Name="物品价格" DataType="System.String"/>
+      <Column Name="仓库名称" DataType="System.String"/>
+      <Column Name="批号" DataType="System.String"/>
+      <Column Name="清单备注" DataType="System.String"/>
+      <Column Name="操作人员" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text2" Left="330.75" Top="9.45" Width="94.5" Height="18.9" Text="入库单详情" Font="微软雅黑, 12pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="37.8"/>
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="378">
+      <TextObject Name="Text1" Left="28.35" Top="9.45" Width="160.65" Height="18.9" Text="物品名:  [putreport.物品名]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text3" Left="274.05" Top="9.45" Width="160.65" Height="18.9" Text="物品类型:  [putreport.物品类型]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text4" Left="519.75" Top="9.45" Width="160.65" Height="18.9" Text="物品代码:  [putreport.物品代码]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text5" Left="28.35" Top="66.15" Width="160.65" Height="18.9" Text="物品规格:  [putreport.物品规格]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text6" Left="274.05" Top="66.15" Width="160.65" Height="18.9" Text="物品体积:  [putreport.物品体积]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text7" Left="519.75" Top="66.15" Width="160.65" Height="18.9" Text="物品重量:  [putreport.物品重量]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text8" Left="28.35" Top="122.85" Width="160.65" Height="18.9" Text="物品数量:  [putreport.物品数量]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text9" Left="274.05" Top="122.85" Width="160.65" Height="18.9" Text="物品单价:  [putreport.物品价格]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text10" Left="519.75" Top="122.85" Width="160.65" Height="18.9" Text="生产日期:  [putreport.生产日期]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text11" Left="28.35" Top="179.55" Width="160.65" Height="18.9" Text="到期日期:  [putreport.到期日期]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text12" Left="274.05" Top="179.55" Width="160.65" Height="18.9" Text="物品备注:  [putreport.物品备注]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text13" Left="519.75" Top="179.55" Width="160.65" Height="18.9" Text="清单备注:  [putreport.清单备注]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text14" Left="28.35" Top="236.25" Width="160.65" Height="18.9" Text="客户名称:  [putreport.客户名称]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text15" Left="274.05" Top="236.25" Width="160.65" Height="18.9" Text="入库方式:  [putreport.入库方式]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text16" Left="519.75" Top="236.25" Width="160.65" Height="18.9" Text="仓库名称:  [putreport.仓库名称]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text17" Left="28.35" Top="292.95" Width="160.65" Height="18.9" Text="入库批号:  [putreport.批号]" Font="微软雅黑, 10.5pt"/>
+      <TextObject Name="Text18" Left="529.2" Top="340.2" Width="160.65" Height="18.9" Text="操作人员:  [putreport.操作人员]" Font="微软雅黑, 10.5pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="465.6" Width="718.2"/>
+  </ReportPage>
+</Report>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="08/18/2017 11:08:51" ReportInfo.Modified="08/18/2017 16:37:12" ReportInfo.CreatorVersion="2014.1.3.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+   
+  }
+}
+</ScriptText>
+  <Dictionary>
+    <TableDataSource Name="Table" ReferenceName="ReportPutInventory.Table" DataType="System.Int32" Enabled="true">
+      <Column Name="物品名称" DataType="System.String"/>
+      <Column Name="物品数量" DataType="System.Int32"/>
+      <Column Name="物品价格" DataType="System.Decimal"/>
+      <Column Name="生产日期" DataType="System.DateTime"/>
+      <Column Name="过期日期" DataType="System.DateTime"/>
+      <Column Name="操作方式" DataType="System.String"/>
+      <Column Name="仓库" DataType="System.String"/>
+      <Column Name="批号" DataType="System.String"/>
+      <Column Name="客户名称" DataType="System.String"/>
+      <Column Name="操作时间" DataType="System.DateTime"/>
+      <Column Name="管理员" DataType="System.String"/>
+      <Column Name="备注" DataType="System.String"/>
+    </TableDataSource>
+    <TableDataSource Name="putreport" ReferenceName="Data.putreport" DataType="System.Int32" Enabled="true">
+      <Column Name="物品名称" DataType="System.String"/>
+      <Column Name="物品数量" DataType="System.Int32"/>
+      <Column Name="物品价格" DataType="System.Decimal"/>
+      <Column Name="生产日期" DataType="System.DateTime"/>
+      <Column Name="过期日期" DataType="System.DateTime"/>
+      <Column Name="操作方式" DataType="System.String"/>
+      <Column Name="仓库" DataType="System.String"/>
+      <Column Name="批号" DataType="System.String"/>
+      <Column Name="客户名称" DataType="System.String"/>
+      <Column Name="操作时间" DataType="System.DateTime"/>
+      <Column Name="管理员" DataType="System.String"/>
+      <Column Name="备注" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Left="330.75" Top="9.45" Width="94.5" Height="18.9" Text="入库报表" Font="微软雅黑, 12pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35"/>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="311.85" DataSource="putreport">
+      <TableObject Name="Table1" Width="718.2" Height="56.7" Border.Lines="Top">
+        <TableColumn Name="Column1" Width="59.85"/>
+        <TableColumn Name="Column2" Width="59.85"/>
+        <TableColumn Name="Column3" Width="59.85"/>
+        <TableColumn Name="Column4" Width="59.85"/>
+        <TableColumn Name="Column5" Width="59.85"/>
+        <TableColumn Name="Column6" Width="59.85"/>
+        <TableColumn Name="Column7" Width="59.85"/>
+        <TableColumn Name="Column8" Width="59.85"/>
+        <TableColumn Name="Column9" Width="59.85"/>
+        <TableColumn Name="Column10" Width="59.85"/>
+        <TableColumn Name="Column11" Width="59.85"/>
+        <TableColumn Name="Column12" Width="59.85"/>
+        <TableRow Name="Row1" Height="28.35">
+          <TableCell Name="Cell1" Border.Lines="Bottom" Text="物品名称" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell2" Border.Lines="Bottom" Text="物品数量" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell3" Border.Lines="Bottom" Text="物品价格" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell4" Border.Lines="Bottom" Text="生产日期" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell5" Border.Lines="Bottom" Text="过期日期" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell6" Border.Lines="Bottom" Text="操作方式" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell7" Border.Lines="Bottom" Text="仓库" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell8" Border.Lines="Bottom" Text="批号" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell9" Border.Lines="Bottom" Text="客户名称" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell10" Border.Lines="Bottom" Text="操作时间" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell11" Border.Lines="Bottom" Text="管理员" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell12" Border.Lines="Bottom" Text="备注" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="28.35">
+          <TableCell Name="Cell13" Text="[putreport.物品名称]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell14" Text="[putreport.物品数量]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell15" Text="[putreport.物品价格]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell16" Text="[putreport.生产日期]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell17" Text="[putreport.过期日期]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell18" Text="[putreport.操作方式]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell19" Text="[putreport.仓库]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell20" Text="[putreport.批号]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell21" Text="[putreport.客户名称]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell22" Text="[putreport.操作时间]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell23" Text="[putreport.管理员]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+          <TableCell Name="Cell24" Text="[putreport.备注]" HorzAlign="Center" VertAlign="Center" Font="宋体, 8pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="390" Width="718.2" Height="66.15"/>
+  </ReportPage>
+</Report>

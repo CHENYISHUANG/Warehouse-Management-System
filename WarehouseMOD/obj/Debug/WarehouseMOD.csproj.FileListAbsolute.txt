@@ -1,0 +1,10 @@
+E:\仓库管理系统\WarehouseMOD\bin\Debug\WarehouseMOD.dll
+E:\仓库管理系统\WarehouseMOD\bin\Debug\WarehouseMOD.pdb
+E:\仓库管理系统\WarehouseMOD\obj\Debug\WarehouseMOD.dll
+E:\仓库管理系统\WarehouseMOD\obj\Debug\WarehouseMOD.pdb
+E:\仓库管理系统\WarehouseMOD\obj\Debug\WarehouseMOD.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\仓库管理系统\WarehouseMOD\bin\Debug\WarehouseMOD.dll
+C:\Users\Admin\Desktop\仓库管理系统\WarehouseMOD\bin\Debug\WarehouseMOD.pdb
+C:\Users\Admin\Desktop\仓库管理系统\WarehouseMOD\obj\Debug\WarehouseMOD.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\仓库管理系统\WarehouseMOD\obj\Debug\WarehouseMOD.dll
+C:\Users\Admin\Desktop\仓库管理系统\WarehouseMOD\obj\Debug\WarehouseMOD.pdb
